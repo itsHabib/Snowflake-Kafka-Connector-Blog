@@ -1,0 +1,18 @@
+{
+    "name": "Sf",
+    "config": {
+        "connector.class": "com.snowflake.kafka.connector.SnowflakeSinkConnector",
+        "tasks.max": "1",
+        "topics": "hydra2_aw_ad_line_item,misc_data,hydra2_fb_ad_line_item",
+        "buffer.count.records": "100",
+        "buffer.size.bytes": "65536",
+        "snowflake.url.name": "pixability.us-east-1.snowflakecomputing.com:443",
+        "snowflake.private.key":"MIIEowIBAAKCAQEAqzmOLF6LZyo1NWMmeWy6qeur+jagDC0r+4WDxPKH01EHrpp8\n08iLlwm+2kyWEyuNvX/+s8q++eYk1R0dV+OD+2p8gbHsj+FrldvAOZGHFR5SeoaI\nQ+uoAvdPX/dZvh/FSTRC3Y3J50ukDa9xyIqCI0SDZChlH+aZQ+k+6xDcQ/gZiut4\nGiu8VntyRfTeJXiybjfOw8mRmANOLmtV/NhNh4g/DwHoom2sP8SLpfoSA8VEhLjJ\nJgl5Q6QEw2uS6Iq7jAC3YfCeKBD0PmYLvxrJOrsDBRHOiGxlgvDAaXFhqfEJ/qnA\nNLmh4MDgOuZB0AMUCBrfYVybEfL4cw3RQ98VYwIDAQABAoIBAD86hMbbruzMyFNL\npuSGAzRGQ/6k91snvysldbBfw0qEjKqsf9YRI4MF5UVlrLGtjqzgvCSWhQlxND7C\nfph6+rz36LxYALxtCLaRLJ3VoKVqyhhW37D9L9DQlK4igDBWORs8QkjgWCOiahVn\nqUPd6gqt/TsaM6WhGQ3b7xEM69npBGAK9hLVEem1kjeF0PkRizRs2H9CBjjtoQYE\n4dcdjR780nZNJq7EgptskM4CYy7ysVHycNq11veYUVuhdwm4LwQqjECQSf9BI1MA\n31w/At8RZidEWiyIAXJqyhr+MyZWK6Ol3ET/tjhQtryN1DpjVPQiJDaYQo7ZXpWr\nc9fTX2ECgYEA3VARf0Ud8SFJ+plUO81DsMxHOjBUmthm2z2JnTSoD0wArx7DfZE1\nse950i5o7xbYRaahG7dvi18ydDQ/o1nGL0SEN8MlMzKbJGPgyshrR4vHCDGQH74B\nXmQO9lC2tTeff16Rkhw2uRTM0y5IPG1Xq/MVaAJydgO/kyt9sV7gSrECgYEAxg/D\nbcvUCkmE6HpZexR4XVr7Q9qGhLTtyMkmxudbnwxHIxQDK6x4la9jD+0ZEApClHds\nmbEWdTEhs2IBT0QjGPwvhHbAOGPPK1zvfwC1rB8u/hZ4lLpAvKWBtAh09myHZ8MP\nbtBbx1vupSCgAF5+8XyEJ/7kdnPeDsWJccQQPlMCgYBcEXM1/wr1xWOBXUgtmLcQ\nVetLyc9om54uluso+z7vHi8qqyGom0A7ReToC2acEGTolOlxHl7JHFFhBltzGWXZ\nRCe9CvHu2p6wBNz/f2Eh4oRqZDQRAHqRSg7vaaSYvwsbcbwdjJ83X+/V6usiOFrA\nrd+55Uq4zdZk4zLnFxE4AQKBgG+ljSWEY6fU353o8i3mUR9W3RLXyUJfdzba5Qf0\nfPpAAo2sh0kENQkzz6S3o4weLH/ifg54+87d/kBPO6vCHgLEjcie5CYlZS/teHfg\nH4jCH0xNwHUeNMXiiiXBKqWKch20oCt4OnQ7x1+/71Gl8usPpLOjBIgdMoyjH6JI\nwltPAoGBAKWwEcWLU2d4F6hyMnYnV9HMTLH6sJTV2osStvRKZZLDYXR5Z3ysiWCS\n10bdukAjUHtyM8wVXzu02Y03TE9FXYWpf2+tUyHnDTONoJRLsaaSKhLpzPcOBkLo\nBKHGixqAOekaG7KbGS0DrIQJibjv3kl/WM5lu6Wz19xOrhz2DBXM",
+        "snowflake.user.name": "mhabib",
+        "snowflake.database.name": "snowtest",
+        "snowflake.schema.name": "misc",
+        "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+        "value.converter": "com.snowflake.kafka.connector.records.SnowflakeAvroConverter",
+        "value.converter.schema.registry.url": "http://schema-registry:8081"
+    }
+}

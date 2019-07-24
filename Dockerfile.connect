@@ -1,0 +1,8 @@
+FROM confluentinc/cp-kafka-connect:5.1.1
+
+# Create plugin directory
+RUN mkdir -p /usr/share/java/plugins
+
+# Add Snowflake connector jar
+RUN curl -sSL "http://central.maven.org/maven2/com/snowflake/snowflake-kafka-connector/0.3.1/snowflake-kafka-connector-0.3.1.jar" \
+    -o /usr/share/java/plugins/snowflake-kafka-connector-0.3.1.jar
